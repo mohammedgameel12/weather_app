@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="app">
+        <div class="loading">
+            <div class="spin"></div>
+        </div>
+        <hr class="line-x">
+        <hr class="line-y">
+        <div class="img"></div>
+        <input type="text" id="city" placeholder="Enter City" required>
+        <button onclick="getData();" onmousedown="presed();" onmouseup="notPresed();" id="button">Get Data</button>
+        <span id="err">City Not <p>Found</p></span>
+        <div class="data">
+            <div id="temp"></div>
+            <div id="weather"></div>
+            <div id="humidity"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
